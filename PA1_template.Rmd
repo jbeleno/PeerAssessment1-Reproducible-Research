@@ -3,14 +3,6 @@ title: "Peer Assessment # 1 - Repoducible research"
 output: html_document
 ---
 
-``` {r setup,echo=FALSE,message=FALSE}
-library(knitr)
-gitsubdir <- paste(tail(strsplit(getwd(),"/")[[1]],1),"/",sep="")
-gitrep <- "https://github.com/jbeleno/PeerAssessment1-Reproducible-Research"
-gitbranch <- "master"
-opts_knit$set(base.url=paste(gitrep,"raw",gitbranch,gitsubdir,sep="/"))
-```
-
 In this document I'm going to save all the steps that I use to solve the first peer assessment activity in the Reproducible Research course.
 
 **Loading and preprocessing the data**
@@ -39,8 +31,6 @@ qplot(
     main = "total number of steps taken each day",
     xlab = "Steps",
     ylab = "Count")
-# I store the plot in a PNG file
-ggsave(filename = "figures/plot1.png")
 ```
 
 Finally I calculate the mean and median of the total number of steps taken per day:
@@ -63,9 +53,6 @@ graphic <- ggplot(
     ylab = "Steps average"
 )+geom_line()
 graphic
-
-# I store the plot in a PNG file
-ggsave(filename = "figures/plot2.png")
 ```
 
 **Imputing missing values**
@@ -112,7 +99,4 @@ ggplot(stepsPerIntervalWeek, aes(interval, steps)) +
     facet_grid(dayType ~ .) +
     xlab("Interval") + 
     ylab("average number of steps")
-
-# I store the plot in a PNG file
-ggsave(filename = "figures/plot3.png")
 ```

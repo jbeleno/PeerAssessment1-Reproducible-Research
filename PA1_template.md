@@ -3,8 +3,6 @@ title: "Peer Assessment # 1 - Repoducible research"
 output: html_document
 ---
 
-
-
 In this document I'm going to save all the steps that I use to solve the first peer assessment activity in the Reproducible Research course.
 
 **Loading and preprocessing the data**
@@ -46,30 +44,7 @@ qplot(
 ## stat_bin: binwidth defaulted to range/30. Use 'binwidth = x' to adjust this.
 ```
 
-![plot of chunk unnamed-chunk-3](https://github.com/jbeleno/PeerAssessment1-Reproducible-Research/raw/master/PeerAssessment1-Reproducible-Research/figure/unnamed-chunk-3-1.png) 
-
-```r
-# I store the plot in a PNG file
-ggsave(filename = "figures/plot1.png")
-```
-
-```
-## Saving 7 x 7 in image
-```
-
-```
-## Warning in grDevices::png(..., width = width, height = height, res = dpi, :
-## unable to open file 'figures/plot1.png' for writing
-```
-
-```
-## Warning in grDevices::png(..., width = width, height = height, res = dpi, :
-## opening device failed
-```
-
-```
-## Error in grDevices::png(..., width = width, height = height, res = dpi, : unable to start png() device
-```
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png) 
 
 Finally I calculate the mean and median of the total number of steps taken per day:
 
@@ -94,30 +69,7 @@ graphic <- ggplot(
 graphic
 ```
 
-![plot of chunk unnamed-chunk-4](https://github.com/jbeleno/PeerAssessment1-Reproducible-Research/raw/master/PeerAssessment1-Reproducible-Research/figure/unnamed-chunk-4-1.png) 
-
-```r
-# I store the plot in a PNG file
-ggsave(filename = "figures/plot2.png")
-```
-
-```
-## Saving 7 x 7 in image
-```
-
-```
-## Warning in grDevices::png(..., width = width, height = height, res = dpi, :
-## unable to open file 'figures/plot2.png' for writing
-```
-
-```
-## Warning in grDevices::png(..., width = width, height = height, res = dpi, :
-## opening device failed
-```
-
-```
-## Error in grDevices::png(..., width = width, height = height, res = dpi, : unable to start png() device
-```
+![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png) 
 
 **Imputing missing values**
 
@@ -168,27 +120,4 @@ ggplot(stepsPerIntervalWeek, aes(interval, steps)) +
     ylab("average number of steps")
 ```
 
-![plot of chunk unnamed-chunk-7](https://github.com/jbeleno/PeerAssessment1-Reproducible-Research/raw/master/PeerAssessment1-Reproducible-Research/figure/unnamed-chunk-7-1.png) 
-
-```r
-# I store the plot in a PNG file
-ggsave(filename = "figures/plot3.png")
-```
-
-```
-## Saving 7 x 7 in image
-```
-
-```
-## Warning in grDevices::png(..., width = width, height = height, res = dpi, :
-## unable to open file 'figures/plot3.png' for writing
-```
-
-```
-## Warning in grDevices::png(..., width = width, height = height, res = dpi, :
-## opening device failed
-```
-
-```
-## Error in grDevices::png(..., width = width, height = height, res = dpi, : unable to start png() device
-```
+![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7-1.png) 
