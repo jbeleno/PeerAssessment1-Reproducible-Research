@@ -4,6 +4,7 @@ output: html_document
 ---
 
 ``` {r setup,echo=FALSE,message=FALSE}
+library(knitr)
 gitsubdir <- paste(tail(strsplit(getwd(),"/")[[1]],1),"/",sep="")
 gitrep <- "https://github.com/jbeleno/PeerAssessment1-Reproducible-Research"
 gitbranch <- "master"
