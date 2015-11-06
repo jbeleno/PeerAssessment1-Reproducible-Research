@@ -3,6 +3,13 @@ title: "Peer Assessment # 1 - Repoducible research"
 output: html_document
 ---
 
+``` {r setup,echo=FALSE,message=FALSE}
+gitsubdir <- paste(tail(strsplit(getwd(),"/")[[1]],1),"/",sep="")
+gitrep <- "https://github.com/jbeleno/PeerAssessment1-Reproducible-Research"
+gitbranch <- "master"
+opts_knit$set(base.url=paste(gitrep,"raw",gitbranch,gitsubdir,sep="/"))
+```
+
 In this document I'm going to save all the steps that I use to solve the first peer assessment activity in the Reproducible Research course.
 
 **Loading and preprocessing the data**
