@@ -1,4 +1,7 @@
-# Peer Assessment # 1 - Repoducible research
+---
+title: "Peer Assessment # 1 - Repoducible research"
+output: html_document
+---
 
 In this document I'm going to save all the steps that I use to solve the first peer assessment activity in the Reproducible Research course.
 
@@ -41,7 +44,7 @@ qplot(
 ## stat_bin: binwidth defaulted to range/30. Use 'binwidth = x' to adjust this.
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png) 
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png) 
 
 ```r
 # I store the plot in a PNG file
@@ -49,7 +52,7 @@ ggsave(filename = "figures/plot1.png")
 ```
 
 ```
-## Saving 7 x 5 in image
+## Saving 7 x 7 in image
 ## stat_bin: binwidth defaulted to range/30. Use 'binwidth = x' to adjust this.
 ```
 
@@ -76,7 +79,7 @@ graphic <- ggplot(
 graphic
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png) 
+![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png) 
 
 ```r
 # I store the plot in a PNG file
@@ -84,7 +87,7 @@ ggsave(filename = "figures/plot2.png")
 ```
 
 ```
-## Saving 7 x 5 in image
+## Saving 7 x 7 in image
 ```
 
 **Imputing missing values**
@@ -136,7 +139,7 @@ ggplot(stepsPerIntervalWeek, aes(interval, steps)) +
     ylab("average number of steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-7-1.png) 
+![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7-1.png) 
 
 ```r
 # I store the plot in a PNG file
@@ -144,5 +147,5 @@ ggsave(filename = "figures/plot3.png")
 ```
 
 ```
-## Saving 7 x 5 in image
+## Saving 7 x 7 in image
 ```
